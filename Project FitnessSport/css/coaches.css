@@ -1,0 +1,129 @@
+/* CSS */
+
+@font-face {
+    font-family: "IBMPlexSans - SemiBold";
+    src: url('fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "IBMPlexSans - Regular";
+    src: url('fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "IBMPlexSans - Bold";
+    src: url('fonts/IBMPlexSans-Bold.ttf');
+}
+
+section.coaches-part {
+    width: 100%;
+    height: 670px;
+    background: #EBEBEB;
+}
+
+div.block-coaches-title {
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+p.coaches-title {
+    font-family: "IBMPlexSans - Bold", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;    
+}
+
+div.block-coaches-subtitle {
+    display: block;
+    text-align: center;
+}
+
+p.coaches-subtitle {
+    font-family: "IBMPlexSans - Regular", sans-serif;
+    font-size: 14px;
+}
+
+div.container-coaches-flex {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 5px;
+}
+
+div.item-coaches-flex {
+    background: linear-gradient(
+        rgba(70, 70, 70, 0.3),
+        rgba(70, 70, 70, 0.3)
+    );
+    display: block;
+    margin: 20px;
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+div.item-coaches-flex:hover {
+    background: linear-gradient(
+        rgba(70, 70, 70, 0.3),
+        rgba(70, 70, 70, 0.3)
+    );
+    display: block;
+    margin: 20px;
+    position: relative;
+    outline: 2.5px solid #F06292;
+    width: 250px;
+    height: 350px;
+}
+
+div.page-name {
+    background: linear-gradient(
+        rgba(70, 70, 70, 0.5),
+        rgba(70, 70, 70, 0.5)
+    );
+    border-top: 5px solid #F06292;
+    color: #EBEBEB;
+    font-family: "IBMPlexSans - Regular", sans-serif;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+}
+
+p.name-coach  {
+    font-size: 22px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+p.type-coach {
+    font-size: 14px;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    section.coaches-part {
+        width: 100%;
+        height: auto;
+    }
+
+    div.block-coaches-title {
+        display: block;
+        padding-top: 20px;
+    }
+
+    div.block-coaches-title {
+        padding: 20px 5px;
+    }    
+
+    p.coaches-subtitle {
+        font-size: 12px;
+    }
+
+    div.container-coaches-flex {
+        flex-direction: column;
+    }
+}

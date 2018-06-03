@@ -1,0 +1,112 @@
+/* CSS */
+
+@font-face {
+    font-family: "IBMPlexSans - SemiBold";
+    src: url('../fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+section.content-part {
+    background: url('../image/wallpaper-second.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 670px;
+}
+
+div.caption-part {
+    display: block;
+    padding: 180px 60px;
+    position: relative;
+    width: 48%;
+}
+
+p.head-caption {
+    color: #EBEBEB;
+    display: block;
+    font-family: "IBMPlexSans - SemiBold", sans-serif;
+    font-size: 50px;
+    margin: 20px 0px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+p.subhead-caption {
+    color: #EBEBEB;
+    font-family: "IBMPlexSans - SemiBold", sans-serif;
+    font-size: 16px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+button.button-get {
+    background: #F06292;
+    border: none;
+    border-radius: 4px;
+    color: #EBEBEB;
+    font-family: "IBMPlexSans - SemiBold", sans-serif;
+    font-size: 18px;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    position: relative;
+    transition: 0.2s ease-in;
+    text-transform: uppercase;
+}
+
+button.button-get:hover {
+    background: rgba(248, 98, 146, 0.5);
+    border: none;
+    border-radius: 4px;
+    color: #EBEBEB;
+    font-family: "IBMPlexSans - SemiBold", sans-serif;
+    font-size: 18px;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    section.content-part {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    div.caption-part {
+        display: block;
+        padding: 100px 40px;
+        position: relative;
+        width: 70%;
+    }
+       
+    p.head-caption {
+        font-size: 30px;
+        text-transform: uppercase;
+        word-break: normal;
+        position: relative;
+        top: 70px;
+    }
+
+    p.subhead-caption {
+        font-size: 13px;
+        word-wrap: break-word;
+        position: relative;
+        top: 70px;
+    }
+
+    button.button-get {
+        font-size: 16px;
+        padding: 13px 28px;
+        position: relative;
+        top: 70px;
+    }
+
+    button.button-get:hover {
+        font-size: 16px;
+        padding: 13px 28px;
+        position: relative;
+        top: 70px;
+    }
+        
+}
